@@ -1,16 +1,322 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Med-Vitox - Profesjonalna Detoksykacja 24/7 | Podmiot Medyczny</title>
-    <meta name="description" content="Med-Vitox - Profesjonalna detoksykacja stacjonarna, mobilna i ambulatoryjna. Zarejestrowany Podmiot Medyczny w Polsce. Dostępność 24/7, pełna dyskrecja." />
-    <meta name="keywords" content="detoksykacja, detoks, odwyk, leczenie uzależnień, alkohol, narkotyki, Brodnica, Kwidzyn, podmiot medyczny" />
-    <script type="module" crossorigin src="/assets/index-BSEBdxJV.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DEvL2OUe.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med-Vitox - Detoks Brodnica | Profesjonalny Odwyk Alkoholowy i Narkotykowy</title>
+    <meta name="description" content="Med-Vitox Brodnica - profesjonalna detoksykacja alkoholowa i narkotykowa. Oferujemy detoks stacjonarny, mobilny i ambulatoryjny. Podmiot medyczny z dostępnością 24/7.">
+    <meta name="keywords" content="detoks brodnica, detoksykacja brodnica, odwyk brodnica, leczenie uzależnień brodnica, detoks alkoholowy brodnica, detoks narkotykowy brodnica, med-vitox brodnica">
+    <meta name="author" content="Med-Vitox">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Med-Vitox Brodnica - Detoksykacja",
+      "description": "Profesjonalna detoksykacja alkoholowa i narkotykowa w Brodnicy",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. XXX",
+        "addressLocality": "Brodnica",
+        "postalCode": "87-300",
+        "addressCountry": "PL"
+      },
+      "telephone": "+48-XXX-XXX-XXX",
+      "openingHours": "Mo-Su 00:00-24:00",
+      "url": "https://www.med-vitox.pl",
+      "priceRange": "$$",
+      "medicalSpecialty": "Detoksykacja"
+    }
+    </script>
+    
+    <style>
+        /* Reset i podstawowe style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Nagłówek */
+        header {
+            background: linear-gradient(135deg, #1a6fb0 0%, #166db3 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: #ffcc00;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400"><rect fill="%231a6fb0" width="1200" height="400"/></svg>') center/cover no-repeat;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #166db3;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #ffd633;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Sekcje */
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #166db3;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title p {
+            color: #666;
+        }
+        
+        /* Usługi */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-card h3 {
+            color: #166db3;
+            margin-bottom: 1rem;
+        }
+        
+        /* Lokalizacja */
+        .location {
+            background-color: #eef5ff;
+            text-align: center;
+        }
+        
+        .location-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Stopka */
+        footer {
+            background-color: #166db3;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .contact-info {
+            margin: 1rem 0;
+        }
+        
+        /* Responsywność */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Med-<span>Vitox</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Strona Główna</a></li>
+                    <li><a href="#services">Usługi</a></li>
+                    <li><a href="#about">O Nas</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sekcja Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Detoks Brodnica - Profesjonalna Detoksykacja 24/7</h1>
+            <p>Med-Vitox Brodnica oferuje profesjonalne usługi detoksykacji alkoholowej i narkotykowej. Jako zarejestrowany podmiot medyczny zapewniamy fachową pomoc z pełną dyskrecją.</p>
+            <a href="#contact" class="btn">Pilna pomoc - Zadzwoń teraz</a>
+        </div>
+    </section>
+
+    <!-- Sekcja Usług -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Usługi Detoksykacji w Brodnicy</h2>
+                <p>Kompleksowe rozwiązania detoksykacyjne dostępne całodobowo</p>
+            </div>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Detoksykacja Stacjonarna</h3>
+                    <p>Pełen monitoring medyczny w komfortowych warunkach z całodobową opieką profesjonalnego personelu medycznego.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Detoksykacja Mobilna</h3>
+                    <p>Nasz zespół przyjeżdża do domu pacjenta, zapewniając niezbędną pomoc medyczną w familiarnym środowisku.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Detoksykacja Ambulatoryjna</h3>
+                    <p>Oferujemy wsparcie dla pacjentów, którzy nie wymagają całodobowej opieki medycznej.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Lokalizacja -->
+    <section class="location" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Med-Vitox Brodnica - Podmiot Medyczny</h2>
+                <p>Zarejestrowana placówka medyczna specjalizująca się w detoksykacji</p>
+            </div>
+            <div class="location-content">
+                <p>Jako zarejestrowany podmiot medyczny, Med-Vitox Brodnica zapewnia najwyższej jakości usługi detoksykacyjne. Nasza placówka w Brodnicy jest w pełni wyposażona w sprzęt medyczny niezbędny do bezpiecznego przeprowadzenia procesu odtrucia.</p>
+                <p>Współpracujemy z doświadczonym personelem medycznym, w tym lekarzami, pielęgniarkami i terapeutami, którzy zapewniają profesjonalną opiekę naszym pacjentom.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kontakt - Detoks Brodnica</h2>
+                <p>Skontaktuj się z nami całodobowo</p>
+            </div>
+            <div class="contact-info">
+                <p><strong>Telefon:</strong> +48 XXX XXX XXX</p>
+                <p><strong>Adres:</strong> Ul. Przykładowa 1, Brodnica</p>
+                <p><strong>Email:</strong> kontakt@med-vitox.pl</p>
+                <p><strong>Dostępność:</strong> 24 godziny na dobę, 7 dni w tygodniu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">Med-<span>Vitox</span></div>
+            <div class="contact-info">
+                <p>Profesjonalna detoksykacja alkoholowa i narkotykowa w Brodnicy</p>
+                <p>Zarejestrowany Podmiot Medyczny</p>
+            </div>
+            <p>&copy; 2023 Med-Vitox Brodnica. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+</body>
 </html>
