@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://med-vitox.pl/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /api/
+
+# Allow important pages
+Allow: /detoks-stacjonarny
+Allow: /detoks-mobilny
+Allow: /detoks-ambulatoryjny
+Allow: /wlewy-witaminowe
+Allow: /wszywka-alkoholowa
+Allow: /pobyt-w-turcji
+Allow: /opieka-care
+Allow: /about
+Allow: /contact
+Allow: /faq
+
+# Crawl delay
+Crawl-delay: 1

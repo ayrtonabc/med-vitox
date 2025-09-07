@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <rect x="10" y="10" width="380" height="80" rx="10" fill="none" stroke="green" stroke-width="2"/>
+  <text x="100" y="60" font-size="40" fill="green">Med-Vitox</text>
+  <path d="M30 20 L30 80 M20 50 H40" stroke="green" stroke-width="4"/> <!-- medical cross -->
+</svg>
